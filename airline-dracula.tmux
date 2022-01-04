@@ -10,6 +10,7 @@ main() {
   yellow='colour215'
   light_purple='colour141'
   dark_purple='colour61'
+  red='colour9'
 
   ## Icons
   left_sep=''
@@ -30,7 +31,7 @@ main() {
   tmux set-option -g status-left-style "fg=${white},bg=${dark_purple},bold"
   tmux set-option -g status-right "${left_sep}#[bg=${black},reverse] %Y-%m-%d %H:%M "
   tmux set-option -g status-right-style "fg=${light_purple},bg=${dark_gray}"
-  tmux set-window-option -g window-status-activity-style "fg=${white},bg=${gray}"
+  tmux set-window-option -g window-status-activity-style "fg=${white},bg=${red}"
   tmux set-window-option -g window-status-separator ''
   tmux set-window-option -g window-status-format ' #I #W '
   tmux set-window-option -g window-status-style "fg=${yellow},bg=${dark_gray}"
